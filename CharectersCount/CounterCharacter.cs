@@ -1,10 +1,10 @@
 ﻿namespace CountCharacters
 {
-    public class CharacterCounter
+    public class CounterCharacter
     {
         private readonly string _symbolsInput;
 
-        public CharacterCounter(string userInput)
+        public CounterCharacter(string userInput)
         {
             ArgumentException.ThrowIfNullOrWhiteSpace(userInput);
 

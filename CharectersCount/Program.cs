@@ -10,7 +10,7 @@ if (string.IsNullOrEmpty(userInput))
     return;
 }
 
-CharacterCounter characterCounter = new CharacterCounter(userInput);
+CounterCharacter characterCounter = new CounterCharacter(userInput);
 
 Dictionary<char, int> sorter = characterCounter.SorterLetters();
 

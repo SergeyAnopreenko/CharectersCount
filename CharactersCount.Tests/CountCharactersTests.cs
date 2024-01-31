@@ -10,7 +10,7 @@ public class CountCharactersTests
     public void ShouldCorrectlyCountLetters(CountLettersCase testCase)
     {
         //Arrange
-        CharacterCounter characterCounter = new CharacterCounter(testCase.Input);
+        CounterCharacter characterCounter = new CounterCharacter(testCase.Input);
 
         //Act
         Dictionary<char, int> result = characterCounter.SorterLetters();
@@ -24,6 +24,6 @@ public class CountCharactersTests
     [InlineData("")]
     public void ShouldThrowExceptionIfInputIsInvalid(string input)
     {
-        Assert.ThrowsAny<ArgumentException>(() => new CharacterCounter(input));
+        Assert.ThrowsAny<ArgumentException>(() => new CounterCharacter(input));
     }
 }
