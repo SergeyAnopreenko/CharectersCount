@@ -12,7 +12,7 @@ if (string.IsNullOrEmpty(userInput))
 
 CharacterCounter characterCounter = new CharacterCounter(userInput);
 
-Dictionary<char, int> sorter = characterCounter.LettersSorter();
+Dictionary<char, int> sorter = characterCounter.SorterLetters();
 
 foreach (var pair in sorter)
 {
