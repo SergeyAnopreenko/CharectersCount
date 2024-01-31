@@ -2,6 +2,6 @@
 
 public record CountLettersCase
 {
-    public string Input { get; set; }
-    public Dictionary<char, int> ExpectedDictionary { get; set; }
+    public required string Input { get; set; }
+    public required Dictionary<char, int> ExpectedDictionary { get; set; }
 }
