@@ -20,12 +20,17 @@
 
         private Dictionary<char, int> CounterLetters()
         {
-            Dictionary<char, int> diction = symbolsInput
-                                    .Where(c => char.IsLetter(c))
-                                    .GroupBy(c => c)
-                                    .Select(gr => (Letter: gr.Key, Count: gr.Count()))
-                                    .OrderByDescending(c => c.Count)
-                                    .ToDictionary(p => p.Letter, p => p.Count);        
+            Dictionary<char, int> diction = new();
+
+            foreach (char c in symbolsInput)
+            {
+                if (char.IsLetter(c))
+
+                    if (diction.ContainsKey(c))
+                        diction[c]++;
+                    else
+                        diction[c] = 1;
+            }
             return diction;
         }
     }
