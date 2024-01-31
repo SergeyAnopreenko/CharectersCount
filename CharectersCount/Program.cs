@@ -1,6 +1,6 @@
 ﻿using CountCharacters;
 
-Console.WriteLine("Enter the characters you want to count");
+Console.WriteLine("Enter the symbols you want to count");
 
 var userInput = Console.ReadLine();
 
