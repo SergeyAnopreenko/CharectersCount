@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharectersCount", "CharectersCount\CharectersCount.csproj", "{8166A097-29DE-46DA-BD9E-6B9C267C89B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountCharecters", "CharectersCount\CountCharecters.csproj", "{8166A097-29DE-46DA-BD9E-6B9C267C89B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharactersCount.Tests", "CharactersCount.Tests\CharactersCount.Tests.csproj", "{A05293C2-67DF-4149-9C0E-CAA6C9368EED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountCharacters.Tests", "CharactersCount.Tests\CountCharacters.Tests.csproj", "{A05293C2-67DF-4149-9C0E-CAA6C9368EED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

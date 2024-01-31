@@ -2,13 +2,13 @@
 {
     public class CharacterCounter
     {
-        private readonly string symbolsInput;
+        private readonly string _symbolsInput;
 
         public CharacterCounter(string userInput)
         {
             ArgumentException.ThrowIfNullOrWhiteSpace(userInput);
 
-            symbolsInput = userInput.ToLower();
+            _symbolsInput = userInput.ToLower();
         }
 
         public Dictionary<char, int> SorterLetters()
@@ -20,18 +20,20 @@
 
         private Dictionary<char, int> CounterLetters()
         {
-            Dictionary<char, int> diction = new();
+            Dictionary<char, int> catalogue = new();
 
-            foreach (char c in symbolsInput)
+            foreach (char c in _symbolsInput)
             {
                 if (char.IsLetter(c))
-
-                    if (diction.ContainsKey(c))
-                        diction[c]++;
+                {
+                    if (catalogue.ContainsKey(c))
+                        catalogue[c]++;
                     else
-                        diction[c] = 1;
+                        catalogue[c] = 1;
+                }
             }
-            return diction;
+
+            return catalogue;
         }
     }
 }

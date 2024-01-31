@@ -1,7 +1,7 @@
-﻿namespace CountCharacters.Tests;
+﻿namespace CountCharactersTests;
 
 public record CountLettersCase
 {
-    public required string Input { get; set; }
-    public required Dictionary<char, int> ExpectedDictionary { get; set; }
+    public required string Input { get; init; }
+    public required Dictionary<char, int> ExpectedDictionary { get; init; }
 }

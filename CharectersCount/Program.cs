@@ -14,7 +14,7 @@ CharacterCounter characterCounter = new CharacterCounter(userInput);
 
 Dictionary<char, int> sorter = characterCounter.SorterLetters();
 
-foreach (var pair in sorter)
+foreach (var (letter, repeats) in sorter)
 {
-    Console.WriteLine($"{pair.Key} : {pair.Value}");
+    Console.WriteLine($"{letter} : {repeats}");
 }

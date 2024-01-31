@@ -1,13 +1,13 @@
-﻿namespace CountCharacters.Tests;
+﻿namespace CountCharactersTests;
 
 public static class CountLettersCaseGenerator
 {
     public static IEnumerable<object[]> GetCases()
     {
         yield return [GetJustOneWordTestCase()];
-        yield return [GetStringWhithOtherSymbolsTestCase()];
+        yield return [GetStringWithOtherSymbolsTestCase()];
         yield return [GetNonAsciiLettersTestCase()];
-        yield return [GetOnlyNonLeterTestCase()];
+        yield return [GetOnlyNonLeеterTestCase()];
     }
 
     private static CountLettersCase GetNonAsciiLettersTestCase()
@@ -45,7 +45,7 @@ public static class CountLettersCaseGenerator
         };
     }
 
-    private static CountLettersCase GetStringWhithOtherSymbolsTestCase()
+    private static CountLettersCase GetStringWithOtherSymbolsTestCase()
     {
         return new CountLettersCase
         {
@@ -61,7 +61,7 @@ public static class CountLettersCaseGenerator
         };
     }
 
-    private static CountLettersCase GetOnlyNonLeterTestCase()
+    private static CountLettersCase GetOnlyNonLeеterTestCase()
     {
         return new CountLettersCase
         {

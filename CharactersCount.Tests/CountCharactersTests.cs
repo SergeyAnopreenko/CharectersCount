@@ -1,4 +1,6 @@
-namespace CountCharacters.Tests;
+using CountCharacters;
+
+namespace CountCharactersTests;
 
 public class CountCharactersTests
 {
